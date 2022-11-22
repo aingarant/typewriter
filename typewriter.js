@@ -1,4 +1,4 @@
-const typewriter = (word) => {
+const typewriter = (sentence) => {
   const chars = sentence.split("");
   chars.map((char, index) => {
     setTimeout(() => {

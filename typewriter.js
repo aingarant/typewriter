@@ -1,7 +1,7 @@
 const typewriter = (sentence) => {
   let delay = 1000;
   const chars = sentence.split("");
-  chars.map((char, index) => {
+  chars.map(char => {
     setTimeout(() => {
       process.stdout.write(char);
     }, delay);
@@ -12,4 +12,3 @@ const typewriter = (sentence) => {
     process.stdout.write("\n");
   },delay);  
 }
-typewriter("This is the sentence.");
